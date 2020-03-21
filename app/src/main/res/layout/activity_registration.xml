@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bk"
+    tools:context=".Registration">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="165dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/tulis"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrasi Yuk"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FF8C00"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/gambar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:hint="Username"
+        android:textSize="15dp"
+        android:textColor="#000080"
+        android:textColorHint="#000080"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rUsername" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:textColor="#000080"
+        android:textColorHint="#000080"
+        android:layout_below="@+id/rUsername"
+        android:layout_alignStart="@+id/rUsername"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rUserEmail" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000080"
+        android:textColorHint="#000080"
+        android:id="@+id/rUserpassword"
+        android:layout_below="@+id/rUserEmail"
+        android:layout_alignStart="@+id/rUserEmail"
+        android:inputType="textPassword"/>
+
+
+    <EditText
+        android:id="@+id/rConfirmUserpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rUserEmail"
+        android:layout_alignStart="@+id/rUserEmail"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="65dp"
+        android:hint="Ulangi Password"
+        android:textColor="#000080"
+        android:textColorHint="#000080"
+        android:textSize="15dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/regis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rConfirmUserpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#FF8C00"
+        android:onClick="register"
+        android:hint="Register"
+        android:textColorHint="#fff"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
